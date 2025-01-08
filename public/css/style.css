@@ -1,0 +1,276 @@
+.custom-primary {
+    background-color: #B2D235 !important; 
+}
+
+/* Text and input CSS */
+.form-container {
+    display: flex;
+    flex-direction: column; /* Xếp chồng các phần tử theo chiều dọc */
+    gap: 18px; /* Khoảng cách giữa các phần tử */
+}
+
+.primary-text {
+    display: flex;  /* Kích hoạt Flexbox */
+    flex-direction: column;  /* Sắp xếp các phần tử theo chiều dọc */
+    margin-bottom: 16px;  /* Khoảng cách dưới mỗi trường */
+    font-weight: 400; /* Độ đậm chữ */
+    font-size: 20px; /* Cỡ chữ */
+    line-height: 23px; /* Khoảng cách giữa các dòng */
+    color: #505353; /* Màu chữ */
+}
+
+.primary-input {
+    width: 480px;
+    height: 52.09px;
+    padding: 0 10px; /* Khoảng cách giữa text và viền trong */
+    border: 1px solid #CECECE; /* Viền mỏng */
+    border-radius: 5px; /* Bo góc */
+    font-size: 16px; /* Cỡ chữ */
+    font-family: 'Arial', sans-serif; /* Font chữ */
+    color: #333; /* Màu chữ */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng kích thước */
+    background-color: #FAFAFA; /* Màu nền */
+}
+
+.primary-input:focus {
+    outline: none; /* Loại bỏ viền mặc định khi focus */
+    border-color: #B2D235; /* Đổi màu viền khi focus */
+    box-shadow: 0 0 5px rgba(178, 210, 53, 0.5); /* Thêm bóng đổ */
+}
+
+/* Text and input CSS */
+.primary-button {
+    width: 214px;
+    height: 52px;
+    top: 532px;
+    left: 451px;
+    border-radius: 22px;
+    background-color: #B2D235;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.primary-button:hover {
+    background-color: #A3C228; /* Hover effect */
+}
+
+.link {
+    color: #A6CB16;
+    font-size: 20px;
+    line-height: 23px; 
+    font-weight: 400; 
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.button-link-container {
+    display: flex; /* Kích hoạt Flexbox */
+    justify-content: space-between; /* Căn chỉnh các phần tử nằm ngang */
+    width: 100%; /* Đảm bảo container chiếm hết chiều rộng */
+    margin-top: 30px;   /* Cách lề trên 30px */
+}
+
+.divider {
+    display: flex; /* Kích hoạt flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin: 42px 0 29px; /* Khoảng cách trên dưới */
+    font-size: 20px; /* Kích thước chữ */
+    width: 480px;
+    color: #505353; /* Màu chữ */
+}
+
+.divider::before,
+.divider::after {
+    content: ""; /* Đảm bảo nó xuất hiện */
+    flex: 1; /* Mở rộng không gian */
+    border-top: 1px solid #808080; /* Đường kẻ đen */
+    margin: 0 10px; /* Khoảng cách giữa text và đường kẻ */
+}
+
+
+.google-signin-button {
+    width: 430px;
+    height: 56px;
+    background-color: #FAFAFA; /* Màu nền */
+    border: 1px solid #DC4E41; /* Màu viền */
+    border-radius: 22px; /* Làm tròn các góc */
+    display: flex; /* Kích hoạt Flexbox */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Kích thước chữ */
+    font-weight: 400; /* Độ đậm của chữ */
+    color: #DC4E41; /* Màu chữ */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.signup-button {
+    width: 430px;
+    height: 56px;
+    background-color: #B2D235; /* Màu nền */
+    border: 1px solid #B2D235; /* Màu viền */
+    border-radius: 22px; /* Làm tròn các góc */
+    display: flex; /* Kích hoạt Flexbox */
+    justify-content: center;
+    align-items: center;
+    font-size: 20px; /* Kích thước chữ */
+    font-weight: 400; /* Độ đậm của chữ */
+    color: #FFFFFF; /* Màu chữ */
+    cursor: pointer; /* Hiển thị con trỏ chuột khi hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Hiệu ứng chuyển màu */
+}
+
+.signup-button:hover {
+    background-color: #A3C228; /* Màu nền khi hover */
+    color: #FAFAFA; /* Màu chữ khi hover */
+}
+
+.google-signin-button:hover {
+    background-color: #f1d1cf;
+}
+
+/* resources/css/style.css */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #FAFAFA; /* Màu nền của trang */
+}
+
+.login-container {
+    display: flex; /* Để căn giữa nội dung bên trong */
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa theo chiều ngang */
+    width: 100%; /* Chiếm toàn bộ chiều ngang trang */
+    min-height: calc(100vh - 66px - 114px); /* Trừ đi khoảng cách từ header và footer */
+    margin-top: 66px;
+    margin-bottom: 114px;
+    background-color: #f9f9f9; /* Màu nền của toàn container */
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column; /* Đặt các thành phần bên trong form theo chiều dọc */
+    align-items: center;
+    width: 552px; /* Kích thước form */
+    height: 711px;
+    padding: 0px;
+    background-color: #fff; /* Màu nền form */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ */
+    
+}
+
+/* Header tổng thể: Full màn hình */
+.site-header {
+    width: 100%;  /* Chiều rộng 100% màn hình */
+    height: 150px;  /* Chiều cao của header */
+    background-color: #FFFFFF;  /* Màu nền của header */
+    border-bottom: 2px solid #ddd;  /* Đường viền chạy toàn màn hình */
+    box-sizing: border-box;  /* Đảm bảo padding không ảnh hưởng đến kích thước tổng thể */
+}
+
+/* Wrapper bên trong: Căn chỉnh nội dung */
+.header-wrapper {
+    width: 100%;
+    max-width: 1400px;  /* Giới hạn chiều rộng nội dung */
+    height: 100%;  /* Đảm bảo chiều cao bằng với header */
+    margin: 0 auto;  /* Căn giữa nội dung */
+    display: flex;  /* Sử dụng Flexbox để căn chỉnh */
+    align-items: center;  /* Canh giữa theo chiều dọc */
+    justify-content: space-between;  /* Khoảng cách giữa logo và menu */
+    padding: 0 20px;  /* Khoảng cách hai bên nội dung */
+}
+
+/* Logo */
+.logo {
+    margin-left: 45px;  /* Cách lề trái 45px */
+    margin-top: 30px;   /* Cách lề trên 30px */
+    margin-bottom: 50px;  /* Cách lề dưới 50px */
+}
+
+.logo img {
+    max-height: 100px;  /* Đặt chiều cao tối đa cho logo */
+    height: auto;       /* Tự động điều chỉnh chiều cao */
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;  /* Hiển thị các liên kết theo hàng ngang */
+    gap: 20px;  /* Khoảng cách giữa các liên kết */
+    margin-right: 57px;  /* Cách lề phải */
+    margin-top: 65px;   /* Cách lề trên */
+    margin-bottom: 66px;
+}
+
+.nav-links a {
+    text-decoration: none;  /* Bỏ gạch chân */
+    font-family: 'Open Sans', sans-serif;  /* Font chữ */
+    font-size: 14px;  /* Cỡ chữ */
+    color: #505353;  /* Màu chữ */
+    font-weight: 700;  /* In đậm chữ */
+    padding: 5px 10px;  /* Khoảng cách trong liên kết */
+    border-radius: 17px;  /* Bo góc */
+    border: 2px solid transparent;  /* Viền ban đầu trong suốt */
+    display: inline-block;  /* Để chiều dài linh hoạt theo nội dung */
+    transition: all 0.3s ease;  /* Hiệu ứng chuyển động */
+}
+
+.nav-links a.selected {
+    background-color: #B2D235;  /* Màu nền khi chọn */
+    color: white;  /* Màu chữ khi chọn */
+    border-color: #B2D235;  /* Viền khi chọn */
+    padding: 5px 15px;  /* Thêm khoảng cách để tạo chiều dài linh hoạt */
+    border-radius: 17px;  /* Bo góc */
+}
+
+.nav-links a:hover {
+    background-color: #B2D235;  /* Đổi màu nền khi hover */
+    color: #FEFFFF;  /* Đổi màu chữ khi hover */
+}
+
+
+.login-title {
+    font-family: 'Arial', sans-serif; /* Font chữ */
+    font-weight: 550; /* In đậm */
+    font-size: 30px; /* Cỡ chữ */
+    line-height: 34.5px; /* Chiều cao dòng */
+    color: #B2D235; /* Màu chữ */
+    text-align: center; /* Căn giữa text */
+    margin: 44px 0px 29px 0px; /* Khoảng cách dưới nếu cần */
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.relative-container {
+    position: relative; /* Bối cảnh định vị cho các phần tử con */
+    width: 300px;
+    height: 200px;
+    border: 2px solid #333;
+    background-color: #f9f9f9;
+}
+
+.absolute-box {
+    position: absolute;
+    width: 80px;
+    height: 40px;
+    background-color: #b2d235;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    border-radius: 5px;
+}
