@@ -274,3 +274,82 @@ body, html {
     font-size: 14px;
     border-radius: 5px;
 }
+
+
+
+/*CSS Register*/
+form.register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 552px;
+    margin: 82px auto 76px;
+    padding: 0px;
+    border: 1px solid #ccc;
+    background-color: #FFFFFF;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+    width: 293px;
+    height: 34px;
+    border: 0.75px solid transparent; /* Không hiển thị border nhưng vẫn đảm bảo cấu trúc */
+    font-family: Arial, sans-serif; /* Arial là font chính */
+    font-weight: 400; /* Độ dày font */
+    font-size: 30px; /* Kích thước chữ */
+    line-height: 34.5px; /* Chiều cao dòng */
+    color: #B2D235; /* Màu chữ */
+    text-align: center; /* Căn giữa nội dung nếu cần */
+}
+
+.form-group {
+    margin-bottom: 29px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 480px; /* Đặt chiều rộng cố định cho các input và textarea */
+    height: 52px; /* Đặt chiều cao cố định cho các input và textarea */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 80px;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.register-button {
+    width: 254px;
+    height: 55px;
+    border-radius: 22px; /* Làm tròn các góc */
+    background-color: #B2D235; /* Màu nền */
+    color: white; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: 400; /* Độ dày chữ */
+    text-align: center; /* Căn giữa văn bản */
+    line-height: 55px; /* Căn giữa chữ theo chiều dọc */
+    border: none; /* Không có border */
+    cursor: pointer; /* Thêm hiệu ứng con trỏ khi di chuột */
+    margin: 16px 0px 41px;
+}
+
+.register-button:hover {
+    background-color: #9FBC2E; /* Màu nền thay đổi khi hover */
+}
+
