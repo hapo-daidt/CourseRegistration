@@ -66,9 +66,9 @@
                 <span>or New to HapoLearn</span>
             </div>
 
-            <button class="signup-button" onclick="window.location.href='/register';">
+            <a href="/register" class="signup-button">
                 <span class="text">Create a new account</span>
-            </button>
+            </a>
 
         </div>
     </div>
