@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Login/register</title>
     <!-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet"> -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
@@ -66,9 +66,10 @@
                 <span>or New to HapoLearn</span>
             </div>
 
-            <div class="signup-button">
+            <a href="/register" class="signup-button">
                 <span class="text">Create a new account</span>
-            </div>
+            </a>
+
         </div>
     </div>
 
